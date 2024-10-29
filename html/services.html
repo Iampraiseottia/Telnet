@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Telnet Cameroon | Book Us</title>
+    <link rel="stylesheet" href="../css/services.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../img/logo.png" />
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+<body>
+
+  <!----------------------- HEADER  ------------------------>
+
+  <section id="header">
+    <div>
+        <img src="../img/logo.png" class="home_logo">
+        <i class="fa-solid fa-x" id="close" style="cursor: pointer; position: absolute; top: 57px; right: 70px; visibility: visible;"></i>
+        <i class="fa-solid fa-bars" id="menu" style="cursor: pointer; position: absolute; top: 57px; right: 70px; visibility: hidden;"></i>
+    </div>
+    <nav class="nav">
+        <ul>
+            <a href="../index.html" >Home</a>
+            <a href="./about.html">About</a>
+            <a href="./services.html" style="color: gray;">Service</a>
+            <a href="./blog.html">Blog</a>
+            <a class="others" style="position: relative; cursor: pointer;">Pages 
+                <div class="dropdown">
+                    <a class="drop_a" href="./team.html">Our Team</a>
+                    <a class="drop_a" href="./event.html">Events</a>
+                    <a  class="drop_a" href="./benefit.html">Beneficiaries</a>
+                    <a class="drop_a" href="./voluntary.html">Volunteerism</a>
+                    <a class="drop_a" href="./our_projects.html"> Our Projects</a>
+                </div>
+              </a>
+            <a href="./contact.html">Contact</a>
+            <a href="./works.html">Works</a>
+            <button class="donate" onclick="openPaymentModal()"><a href="#">Donate</a></button>
+            <div id="payment-modal" class="modal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:white; padding:20px; border-radius:5px; box-shadow:0 0 10px rgba(0,0,0,0.3); z-index:1000;">
+                <h3 style="color: orange; padding-top: 10px; padding-bottom: 10px; text-align: center;">Select Payment Method</h3>
+                <button onclick="processPayment('paypal')" style="margin:5px; padding: 10px 18px; border: 1px solid orange; background-color: white; color: rgb(48, 45, 45); border-radius: 6px;">MTN Mobile Money</button>
+                <button onclick="processPayment('card')" style="margin:5px;  padding: 10px 18px; border: 1px solid orange; background-color: white; color: rgb(48, 45, 45); border-radius: 6px;">Orange Money</button>
+                <button onclick="processPayment('momo')" style="margin:5px;  padding: 10px 18px; border: 1px solid orange; background-color: white; color: rgb(48, 45, 45); border-radius: 6px;">Bank Payment</button>
+                <button onclick="closePaymentModal()" style="margin:5px;  padding: 10px 18px; border: 1px solid orange; background-color: white; color: rgb(48, 45, 45); border-radius: 6px;">Cancel</button>
+            </div>
+        </ul>
+    </nav>
+   </section>
+        
+
+     
+
+        <!----------------------------- Main Container | TELNET ------------------------------------>
+
+    <section id="main-services" style="position: relative;">
+        <h1 class="service-h1" id="service-h1">
+            TELNET Digital Literacy Initiative
+        </h1>
+    
+        <button id="service-btn" class="book-cyber" style="animation: fadeInUp 1.5s ease-in-out; top: 60%; left: 40%; visibility: visible; position: absolute; margin-bottom: 0; margin-top: 14px;"><a href="#">Book Now <span>&rightarrow;</span> </a></button>
+
+        <p id="service-content">
+          <marquee id="marquee" direction="left" behavior="scroll" width="100%" scrollamount="10" scrolldelay="180">TELNET Digital Literacy Initiative with vast experienced gained over the years.</marquee>
+
+
+          <div id="listService" >
+            <h3>Academic Internship Programs</h3>
+            <br>
+            <h3>Professional Internship Programs</h3>
+          </div>
+
+          <div id="listServiceCyber" >
+            <div>
+                <h3>Network Security Specialist</h3>
+                <h3>Security Engineering</h3>
+            </div>
+            <br>
+            <div>
+                <h3> Cryptography</h3>
+                <h3>Information Security Engineering</h3>
+            </div>
+          </div>
+
+
+          
+
+          <marquee style="display: none;" id="marqueeInstall" direction="left" behavior="scroll" width="100%" scrollamount="10" scrolldelay="180">Secure, stable and efficient installation of electrical supply and appliances.</marquee>
+
+          <div id="listServiceConCareer" >
+            <h3>Enlighten the youth on the vast variety of careers</h3>
+            <h3>Clear Your Worries </h3>
+          </div>
+
+
+
+        </p>
+        <fieldset class="service-fieldset-main" id="radio">
+            <input id="service-general" type="radio" class="service-radio" name="service-radio" checked>
+            <input id="internship" type="radio" class="service-radio" name="service-radio" style="margin-left: 5px; margin-right: 5px;">
+            <input id="cyber" type="radio" class="service-radio" name="service-radio">
+            <input id="installationElect" type="radio" class="service-radio" name="service-radio">
+            <input id="carrierConsult" type="radio" class="service-radio" name="service-radio" style="margin-left: 5px; margin-right: 5px;">
+        </fieldset>
+    </section>
+
+    <!----------------- INTERNSHIP  ----------------------------->
+
+    <section id="service-internship">
+      <div class="internship-header">
+        <h1>I</h1>
+        <h1>N</h1>
+        <h1>T</h1>
+        <h1>E</h1>
+        <h1>R</h1>
+        <h1>N</h1>
+        <h1>S</h1>
+        <h1>H</h1>
+        <h1>I</h1>
+        <h1>P</h1>
+      </div>
+      <div class="internship-container">
+        <div class="academic-internship" style="margin-right: 30px;">
+          <img src="../img/intership (1).jpg" alt="Academic internship" class="academic-internship-img">
+          <div class="immediate">
+            <h2>&star; Software Dev &star;  <br>&star;  Internship &star;</h2>
+            <div class="animate-intern">
+              <p class="animate-intern1"></p>
+              <p class="animate-intern2"></p>
+            </div>
+            <p>Internship opportunity which is made up of all software development. It's main branches are web application development and mobile app development.</p>
+            <button><a href="#">Apply Now <span> &rightarrow;</span></a></button>
+          
+          </div>
+        </div>
+        
+        <div class="academic-internship" style="margin-right: 30px;">
+          <img src="../img/intership (3).jpg" alt="Academic internship" class="academic-internship-img">
+          <div class="immediate">
+            <h2>&star; Networking  &star;  <br>&star;  Internship &star;</h2>
+            <div class="animate-intern">
+              <p class="animate-intern1"></p>
+              <p class="animate-intern2"></p>
+            </div>
+            <p>Networking Internship opportunity which is made up of all networking branches and fields . We train you from scratch and ensure adequate mastery of the field .</p>
+            <button><a href="#">Apply Now <span> &rightarrow;</span></a></button>
+          
+          </div>
+       </div>
+
+        <div class="academic-internship" style="margin-right: 30px;">
+          <img src="../img/intership (5).jpg" alt="Academic internship" class="academic-internship-img">
+          <div class="immediate">
+            <h2>&star; Cyber Security &star;  <br>&star;  Internship &star;</h2>
+          <div class="animate-intern">
+            <p class="animate-intern1"></p>
+            <p class="animate-intern2"></p>
+          </div>
+          <p>Protecting systems, networks and programs from digital attacks. Cybersecurity aims to protect computer systems, applications, devices, data, and financial assets.</p>
+          <button><a href="#">Apply Now <span> &rightarrow;</span></a></button>
+        
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!----------------------------- Cyber Security ---------------------------->
+
+    <section id="cyber-accessories">
+      <div class="cyber-header">
+        <h1> CYBER SECURITY </h1>
+        <div class="line-general">
+          <hr class="line">
+          <hr class="line line2" >
+          <hr class="line">
+        </div>
+      </div>
+
+      <div class="cyber-details">
+        <div class="cyber-details-left">
+          <div class="catch-cyber">
+            &bigoplus; 
+            <p> Ethical Hacking</p>&bigoplus;
+          </div>
+          <h1>
+            Protect Your Systems & Data From Unauthorize Access.
+          </h1>
+          <p class="details-cyber">
+            Cybersecurity refers to any technologies, practices and policies for preventing cyberattacks or mitigating their impact. Cybersecurity aims to protect computer systems, applications, devices, data, financial assets and people against ransomware and other malware, phishing scams, data theft and other cyberthreats.
+          </p>
+
+          <div class="cyber-content">
+            <div class="cyber-content-1">
+              <i class="fa-solid fa-truck"></i>
+              <div class="cyber-content-1-sec1">
+                <h3>Global Service</h3>
+                <p style="color: gray;">
+                  Ensure the key cybersecurity considerations are delivered to the later through Data Protection, Network Security, Access Management, Incident Response, Regulations, Supply Chain Security and Monitoring and Improvement.
+                </p>
+                <p class="dotted" style="margin-top: 20px;"></p>
+              </div>
+            </div>
+
+            <div class="cyber-content-1">
+              <i class="fa-solid fa-file-shield"  style="margin-top: -10px;"></i>
+              <div class="cyber-content-1-sec1">
+                <h3>Secure Protection</h3>
+                <p style="color: gray;">
+                  Safeguard sensitive information  critical systems and valuable assets from digital threats through Access Control, Encryption & Data Protection, Network Security, Application Security, Security Monitoring, Regulatory Requirements.
+                </p>
+                <p class="dotted" style="margin-top: 20px;"></p>
+              </div>
+            </div>
+
+            <div class="cyber-content-1">
+              <i class="fab fa-truck" style="margin-top: 25px;"></i>
+              <div class="cyber-content-1-sec1">
+                <h3>Expert Personnel's</h3>
+                <p style="color: gray;">
+                  Ensure the key cybersecurity considerations are delivered to the later via Data Protection, Network Security, Access Management, Incident Response, Supply Chain Security and Continuous Monitoring and Improvement.
+                </p>
+                </div>
+            </div>
+
+            <button class="book-cyber"><a href="#">Book Now <span>&rightarrow;</span> </a></button>
+          </div>
+        </div>
+        <div class="cyber-details-right">
+          <img src="../img/cyber4.webp" class="cyber-details-right-img1">
+          <img src="../img/cyber3.webp" class="cyber-details-right-img2">
+          <img src="../img/dots.png" class="dots">
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-------------------- Talent and experience show case  -------------------->
+
+    <section id="talentShow">
+      <div class="talent-show-left">
+        <div class="talent-show-left-reach">
+          
+          <div class="talent-show-left-reach1">
+            <div class="talent-show-left-reach1-details-diff">
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <h1 class="talent-show-left-reach1-details count-up" data-target="450">0 </h1>
+                <h2 style="margin-left: 6px;">+</h2>
+              </div>
+                <p>People Reached</p>
+            </div>
+            <div class="talent-show-left-reach1-details-diff">
+              <div>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                  <h1 class="talent-show-left-reach1-details count-up" data-target="980">0</h1>
+                  <h2 style="margin-left: 6px;">+</h2>
+                </div>
+              </div>
+                <p>Successful Delivery</p>
+            </div>
+        </div>
+        <div class="talent-show-left-reach1" style="margin-top: 38px;">
+            <div class="talent-show-left-reach1-details-diff">
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <h1 class="talent-show-left-reach1-details count-up" data-target="10">0</h1>
+                <h2 style="margin-left: 6px;">+</h2>
+              </div>
+                <p>Experience</p>
+            </div>
+            <div class="talent-show-left-reach1-details-diff">
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <h1 class="talent-show-left-reach1-details count-up" data-target="720">0</h1>
+                <h2 style="margin-left: 6px;">+</h2>
+              </div>
+                <p>Reviews</p>
+            </div>
+        </div>
+          
+        </div>
+      </div>
+      <div class="talent-show-right">
+        <h2>
+          <span>&sext;</span> Skill Set <span>&sext;</span>
+        </h2>
+        <div class="talent-show-right-details">
+          <h4>Timely Delivery</h4>
+          <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+          </div>
+          <p class="progress-count">90%</p>
+        </div>
+        <div class="talent-show-right-details">
+          <h4> Marketing </h4>
+          <div class="progress-bar-container">
+            <div class="progress-bar2"></div>
+          </div>
+          <p class="progress-count2">63%</p>
+        </div>
+        <div class="talent-show-right-details">
+          <h4>Effectiveness and Efficiency</h4>
+          <div class="progress-bar-container">
+            <div class="progress-bar3"></div>
+          </div>
+          <p class="progress-count3">86%</p>
+        </div>
+        <div class="talent-show-right-details">
+          <h4>Consultancy</h4>
+          <div class="progress-bar-container">
+            <div class="progress-bar4"></div>
+          </div>
+          <p class="progress-count4">77%</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!--------------------------------------- NGO Services  ------------------------------------->
+
+    <section id="service-remaining">
+      <div class="cyber-header">
+        <h1> Complementary Services </h1>
+        <div class="line-general" style="margin-top: 18px;">
+          <hr class="line" style="width: 100px;">
+          <hr class="line line2" style="width: 200px; border-color: rgb(101, 101, 101);">
+          <hr class="line" style="width: 100px;">
+        </div>
+      </div>
+      <div class="service-remaining-container the_main_other">
+        <div class="service-remaining-container-details the_one">
+          <i class="fa-solid fa-user-doctor"></i>
+          <h3>IT consultation</h3>
+          <p> In close collaboration with you, our team of seasoned experts will evaluate your existing infrastructure, pinpoint any problems, and create a customized plan to improve productivity, increase efficiency, and unleash your full digital potential. </p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+        <div class="service-remaining-container-details the_two" style="margin-left: 30px; margin-right: 30px;">
+          <i class="fa-solid fa-camera-retro"></i>
+          <h3>Career Orientation </h3>
+          <p> Manner of approach and view of the vast variety of careers, which is a driving force behind their career choices. Enlightenment of the career choices and opportunities to advance their career so as to make better decisions concerning their future. </p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+        <div class="service-remaining-container-details the_one">
+          <i class="fa-solid fa-bolt-lightning"></i>
+          <h3>ICT For Dev</h3>
+          <p> ICT4D or Information and Communication Technology for Development, refers to leveraging technology to address social, economic, and environmental challenges in developing regions. It aims to improve access to information, enhance education.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+      </div>
+      <div class="service-remaining-container the_main_other">
+        <div class="service-remaining-container-details the_one">
+          <i class="fa-solid fa-map-location"></i>
+          <h3>Tech Outreach</h3>
+          <p>We connect you with the newest trends in the industry, creative solutions, and knowledgeable insights. Our tech outreach programs, which range from workshops to one-on-one consultations, provide you technologies for better decisions making.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+        <div class="service-remaining-container-details the_two" style="margin-left: 30px; margin-right: 30px;">
+          <i class="fa-solid fa-money-check-dollar"></i>
+          <h3>IT Solutions</h3>
+          <p> IT solutions encompass a range of services and technologies designed to meet organizational needs. These include software development, cloud computing, cybersecurity, data management, and network infrastructure. By integrating innovative tools.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+        <div class="service-remaining-container-details the_one">
+          <i class="fa-solid fa-code-branch"></i>
+          <h3>Digital Literacy</h3>
+          <p> With the help of our digital literacy training, empower your staff. We provide all-inclusive programs to improve digital competencies, ranging from fundamental computer abilities to sophisticated software and application utilization.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+      </div>
+
+
+
+
+      <div class="service-remaining-container the_main">
+        <div class="service-remaining-container-details the_thress">
+          <i class="fa-solid fa-user-doctor"></i>
+          <h3>IT consultation</h3>
+          <p> In close collaboration with you, our team of seasoned experts will evaluate your existing infrastructure, pinpoint any problems, and create a customized plan to improve productivity, increase efficiency, and unleash your full digital potential. </p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+        <div class="service-remaining-container-details the_thress" style="margin-left: 30px; margin-right: 30px;">
+          <i class="fa-solid fa-camera-retro"></i>
+          <h3>Career Orientation </h3>
+          <p> Manner of approach and view of the vast variety of careers, which is a driving force behind their career choices. Enlightenment of the career choices and opportunities to advance their career so as to make better decisions concerning their future. </p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+       
+      </div>
+      <div class="service-remaining-container the_main">
+        <div class="service-remaining-container-details the_thress" style="margin-right: 20px;">
+          <i class="fa-solid fa-map-location"></i>
+          <h3>Tech Outreach</h3>
+          <p>We connect you with the newest trends in the industry, creative solutions, and knowledgeable insights. Our tech outreach programs, which range from workshops to one-on-one consultations, provide you technologies for better decisions making.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+        
+        <div class="service-remaining-container-details the_thress">
+          <i class="fa-solid fa-code-branch"></i>
+          <h3>Digital Literacy</h3>
+          <p> With the help of our digital literacy training, empower your staff. We provide all-inclusive programs to improve digital competencies, ranging from fundamental computer abilities to sophisticated software and application utilization.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+      </div>
+
+      <div class="service-remaining-container the_main">
+        <div class="service-remaining-container-details the_thress" style="margin-left: 30px; margin-right: 30px;">
+          <i class="fa-solid fa-money-check-dollar"></i>
+          <h3>IT Solutions</h3>
+          <p> IT solutions encompass a range of services and technologies designed to meet organizational needs. These include software development, cloud computing, cybersecurity, data management, and network infrastructure. By integrating innovative tools.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+        <div class="service-remaining-container-details the_thress">
+          <i class="fa-solid fa-bolt-lightning"></i>
+          <h3>ICT For Dev</h3>
+          <p> ICT4D or Information and Communication Technology for Development, refers to leveraging technology to address social, economic, and environmental challenges in developing regions. It aims to improve access to information, enhance education.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+      </div>
+
+
+
+
+      <div class="last_main" style="display: none;">
+        <div class="service-remaining-container-details the_thress " style="margin-left: 30px; margin-right: 30px;">
+          <i class="fa-solid fa-money-check-dollar"></i>
+          <h3>IT Solutions</h3>
+          <p> IT solutions encompass a range of services and technologies designed to meet organizational needs. These include software development, cloud computing, cybersecurity, data management, and network infrastructure. By integrating innovative tools.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+        <div class="service-remaining-container-details the_thress">
+          <i class="fa-solid fa-bolt-lightning"></i>
+          <h3>ICT For Dev</h3>
+          <p> ICT4D or Information and Communication Technology for Development, refers to leveraging technology to address social, economic, and environmental challenges in developing regions. It aims to improve access to information, enhance education.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+
+        <div class="service-remaining-container-details the_thress" style="margin-right: 20px;">
+          <i class="fa-solid fa-map-location"></i>
+          <h3>Tech Outreach</h3>
+          <p>We connect you with the newest trends in the industry, creative solutions, and knowledgeable insights. Our tech outreach programs, which range from workshops to one-on-one consultations, provide you technologies for better decisions making.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+        
+        <div class="service-remaining-container-details the_thress">
+          <i class="fa-solid fa-code-branch"></i>
+          <h3>Digital Literacy</h3>
+          <p> With the help of our digital literacy training, empower your staff. We provide all-inclusive programs to improve digital competencies, ranging from fundamental computer abilities to sophisticated software and application utilization.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+
+        
+        
+        <div class="service-remaining-container-details the_thress">
+          <i class="fa-solid fa-code-branch"></i>
+          <h3>Tech Outreach</h3>
+          <p> With the help of our digital literacy training, empower your staff. We provide all-inclusive programs to improve digital competencies, ranging from fundamental computer abilities to sophisticated software and application utilization.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+      </div>
+    </section>
+
+
+<!------------------------ FOOTER  ----------------------->
+
+    <section id="footer">
+      <div class="footer-content">
+          <div class="Ease-details">
+              <h2>TELNETCM </h2>
+              <p>Tared Maingo, <br> Buea, <br> South-west, <br> Cameroon</p>
+              <p style="padding-top: 11px;"><b>Phone:</b> 679 817 021</p>
+              <p style="margin-top: 14px;"><b>Email:</b> telnet@gmail.com</p>
+          </div>
+          <div class="useful-links">
+            <h4>Useful Links</h4>
+            <ul>
+                <li><i class="fa-solid fa-greater-than arrow" style=" left: -95px !important;"></i><a href="../index.html">Home</a></li>
+                <li><i class="fa-solid fa-greater-than arrow" style=" left: -95px !important;" ></i><a href="./about.html">About</a></li>
+                <li><i class="fa-solid fa-greater-than arrow" style=" left: -95px !important;"></i><a href="./services.html">Service</a></li>
+                <li><i class="fa-solid fa-greater-than arrow" style=" left: -95px !important;"></i><a href="./works.html">Works</a></li>
+                <li><i class="fa-solid fa-greater-than arrow" style=" left: -95px !important;"></i><a href="./blog.html">Blog</a></li>
+                <li><i class="fa-solid fa-greater-than arrow" style=" left: -95px !important;"></i><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="our-service">
+            <h4>Our Services</h4>
+            <ul>
+                <li><i class="fa-solid fa-greater-than arrow2" ></i><a href="./html/services.html#service-remaining">IT consultation</a></li>
+                <li><i class="fa-solid fa-greater-than arrow2 extra1" ></i><a href="./html/services.html#service-remaining">Career Orientation </a></li>
+                <li><i class="fa-solid fa-greater-than arrow2 extra2" ></i><a href="./html/services.html#service-remaining">ICT For Dev</a></li>
+                <li><i class="fa-solid fa-greater-than arrow2" ></i><a href="./html/services.html#service-remaining">Tech Outreach</a></li>
+                <li><i class="fa-solid fa-greater-than arrow2 extra4" ></i><a href="./html/services.html#service-remaining">IT Solutions</a></li>
+                <li><i class="fa-solid fa-greater-than arrow2" ></i><a href="./html/services.html#service-remaining">Digital Literacy</a></li>
+            </ul>
+        </div>
+          <div class="our-social">
+              <h4>Our Social Network</h4>
+              <p>You can get to TELNETCM on social media and creat a valuable network to solve or put to rest any of youur worries through</p>
+              <div class="social-img">
+                  <a href="#contact-us"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#contact-us"><i class="fa-brands fa-whatsapp"></i></a>
+                  <a href="#contact-us"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#contact-us"><i class="fa-brands fa-linkedin"></i></a>
+
+              </div>
+             
+
+          </div>
+          <div class="map">
+              <h4>Our Map</h4>
+              <iframe style="height: 240px !important; box-shadow: 2px 4px 8px lightgray; margin-top: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.3110097092044!2d9.290450474890406!3d4.159127295814693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106131ecc8a74831%3A0x69b4de387a1c28d7!2sMalingo%20Street%2C%20Buea!5e0!3m2!1sen!2scm!4v1725528665425!5m2!1sen!2scm" frameborder="0" width="100%" height="100%"></iframe>
+          </div>
+      </div>
+
+      <!-- TABLET FOOTER  -->
+
+      <div class="tablet_footer">
+        <div class="tablet_footer_first">
+            <div class="Ease-details">
+                <h2>TELNETCM </h2>
+                <p><b>Address</b>: Tared Maingo, <br> Buea, <br> South-west, <br> Cameroon</p>
+                <p style="padding-top: 11px;"><b>Phone:</b> 679 817 021</p>
+                <p style="margin-top: 14px;"><b>Email:</b> telnet@gmail.com</p>
+            </div>
+
+            <div class="useful-links">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><i class="fa-solid fa-greater-than arrow"></i><a href="../index.html">Home</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow"></i><a href="./about.html">About</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow"></i><a href="./services.html">Service</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow"></i><a href="./works.html">Works</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow"></i><a href="./blog.html">Blog</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow"></i><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="our-service">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><i class="fa-solid fa-greater-than arrow2"></i><a href="./html/services.html#service-remaining">IT consultation</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow2 extra1"></i><a href="./html/services.html#service-remaining">Career Orientation </a></li>
+                    <li><i class="fa-solid fa-greater-than arrow2 extra2"></i><a href="./html/services.html#service-remaining">ICT For Dev</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow2"></i><a href="./html/services.html#service-remaining">Tech Outreach</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow2 extra4"></i><a href="./html/services.html#service-remaining">IT Solutions</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow2"></i><a href="./html/services.html#service-remaining">Digital Literacy</a></li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="tablet_footer_second">
+            <div class="our-social">
+                <h4>Our Social Network</h4>
+                <p>You can get to TELNETCM on social media and creat a valuable network to solve or put to rest any of youur worries through</p>
+                <div class="social-img">
+                    <a href="#contact-us"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#contact-us"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#contact-us"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#contact-us"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="map">
+                <h4>Our Map</h4>
+                <iframe style="box-shadow: 2px 4px 8px lightgray; margin-top: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.3110097092044!2d9.290450474890406!3d4.159127295814693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106131ecc8a74831%3A0x69b4de387a1c28d7!2sMalingo%20Street%2C%20Buea!5e0!3m2!1sen!2scm!4v1725528665425!5m2!1sen!2scm" frameborder="0" width="100%" height="100%"></iframe>
+            </div>
+        </div>
+
+</div>
+
+      <div class="footer-conclude">
+          <p>@Copyright TDI, All Rights Reserved</p>
+          <p><em style="color: rgb(248, 233, 201);">Designed by:</em> <strong>Dev Intern, TelnetCm</strong></p>
+      </div>  
+  </section>
+
+    
+    <script src="../js/main.js"></script>
+
+
+    <script>
+      const othersLink = document.querySelector('.others');
+      const dropdown = document.querySelector('.dropdown');
+
+      othersLink.addEventListener('mouseenter', () => {
+          dropdown.style.display = 'flex';
+      });
+
+
+      dropdown.addEventListener('mouseleave', () => {
+          dropdown.style.display = 'none';
+      });
+
+
+        // Responsiveness
+  const close = document.getElementById('close');
+  const menu = document.getElementById('menu');
+  const navBar = document.querySelector('.nav');
+  const header = document.getElementById('header');
+
+
+  menu.addEventListener('click', () => {
+    menu.style.visibility = 'hidden';
+    close.style.visibility = 'visible';
+    navBar.style.visibility = 'visible';
+    header.style.height = 'auto';
+  })
+
+  close.addEventListener('click', () => {
+    menu.style.visibility = 'visible';
+    close.style.visibility = 'hidden';
+    navBar.style.visibility = 'hidden';
+    header.style.height = '50px';    
+  })
+  
+  </script>
+
+<script>
+        
+  function openPaymentModal() {
+      document.getElementById('payment-modal').style.display = 'block';
+  }
+
+  function closePaymentModal() {
+      document.getElementById('payment-modal').style.display = 'none';
+  }
+
+  function processPayment(method) {
+      // Here you would integrate with actual payment processors
+      alert('Processing ' + method + ' payment...');
+      closePaymentModal();
+  }
+
+</script>
+
+
+</body>
+</html>
